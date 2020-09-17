@@ -1,0 +1,44 @@
+.listitem__list{
+   background-color: palegreen;
+   color: black;
+   height: 55px;
+   width: 300px;
+   margin: 20px auto;
+}
+ 
+.listitem__list p{
+    padding:14px;
+    position: relative;
+} 
+
+.listitem__list p span{
+    position: absolute;
+    cursor: pointer;
+}
+
+.listitem__list div{
+    position: absolute;
+    cursor: pointer;
+}
+.listitem__delete{
+    margin: -3px 3px;
+    font-size: 15px;
+    right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.listitem__completed{
+    /* right: 0px; */
+    
+    font-size: 15px;
+    right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.listitem__list p input{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+
+}
