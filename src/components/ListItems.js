@@ -1,6 +1,9 @@
 import React,{Component} from 'react';
 import './ListItems.css';
 import FlipMove from 'react-flip-move';
+import DeleteIcon from '@material-ui/icons/Delete';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+
 
 const ListItems = ({items, deleteItem, setUpdate}) =>{
 
@@ -24,9 +27,9 @@ const ListItems = ({items, deleteItem, setUpdate}) =>{
                      /> 
                 <span className="listitem__delete" 
                 onClick ={()=> deleteItem(item.key)}>
-                    Delete
+                    <DeleteIcon/>
                 </span>
-                <div className="listitem__completed" onClick ={()=> completeItem(item)}>Completed </div>
+                <div className="listitem__completed" onClick ={()=> completeItem(item)}><CheckBoxIcon/> </div>
                 </p>
                 
                 </div>

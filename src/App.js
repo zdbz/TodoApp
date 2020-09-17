@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import './App.css'
 import ListItems from './components/ListItems';
+import Welcome from './components/Welcome';
 
 
 class App extends Component{
@@ -68,11 +69,16 @@ class App extends Component{
   render(){
     return(
       <div className="App">
+        <center>
+        <Welcome/>
+        
         <form className ="app__form">
+        
         <input placeholder ="Enter your text here" value ={this.state.currentItem.text}
         onChange={this.inputHandler}/>
         <button onClick={this.addItem}>Add</button>
         </form>
+        </center>
 
         <ListItems setUpdate={this.setUpdate} deleteItem={this.deleteItem} items ={this.state.items}/>
       </div>
